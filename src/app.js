@@ -1,12 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import './app.css';
+import 'font-awesome/css/font-awesome.css';
 
+import './app.css';
+import styles from './styles.module.css';
+
+// Note: this process of React.creatClass is the old way of creating a React component
 const App = React.createClass({
   render: function() {
     return (
-      <div>Hello World</div>
+      <div className={styles.wrapper}>
+        <h1>
+          <i className="fa fa-star"></i>
+          Environment: {__NODE_ENV__}
+        </h1>
+        <p>I would like to see this app work and get finished eventually!</p>
+        <p>Please just focus and GET IT DONE!</p>
+      </div>
     )
   }
 });
