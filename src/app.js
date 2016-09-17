@@ -6,7 +6,7 @@ import 'font-awesome/css/font-awesome.css';
 import './app.css';
 import styles from './styles.module.css';
 
-// Note: this process of React.creatClass is the old way of creating a React component
+// Note: this process of React.creatClass is the es5 way of creating a React component
 const App = React.createClass({
   render: function() {
     return (
